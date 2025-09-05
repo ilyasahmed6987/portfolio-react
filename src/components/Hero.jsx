@@ -9,7 +9,7 @@ const Hero = () => {
             Hi, I'm <span className="text-primary">Ilyas Ahmed</span>
           </h1>
           <h2 className="h3 text-muted mb-4 fw-medium">
-            Full Stack Developer & UI/UX Enthusiast
+            AI and ML | Full Stack Developer | UI/UX Engineer
           </h2>
           <p className="lead text-muted mb-5 mx-auto" style={{maxWidth: '600px'}}>
             Passionate about creating beautiful, functional, and user-centered digital experiences 
