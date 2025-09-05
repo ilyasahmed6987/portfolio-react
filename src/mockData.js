@@ -98,7 +98,7 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  email: "ilyasahmed6987@gmail.com.com",
+  email: "ilyasahmed6987@gmail.com",
   phone: "+92 333 7148980",
   address: "Karachi Sindh, Pakistan - 75290"
 };
