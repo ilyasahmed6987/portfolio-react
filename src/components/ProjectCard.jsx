@@ -1,7 +1,14 @@
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
-  return (
+
+  const para = (
+    <p className="text-muted small lh-base mb-0">
+      {project.description}
+    </p>
+  );
+
+  const CardContent = (
     <div className="card h-100 shadow-sm card-hover border-0">
       <div className="card-body p-4">
         <div className="d-flex align-items-center mb-3">
@@ -21,6 +28,19 @@ const ProjectCard = ({ project }) => {
         </p>
       </div>
     </div>
+  );
+
+  return project.url ? (
+    <a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+    >
+      {CardContent}
+    </a>
+  ) : (
+    CardContent
   );
 };
 
