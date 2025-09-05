@@ -1,0 +1,91 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Mobile navbar menu background */
+@media (max-width: 991.98px) {
+  .navbar-collapse.show {
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Custom utility classes */
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .section-padding {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+}
+
+.container-max {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.7s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Primary color theme */
+:root {
+  --bs-primary: #1d4ed8;
+  --bs-primary-rgb: 29, 78, 216;
+}
+
+.btn-primary {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.text-primary {
+  color: #1d4ed8 !important;
+}
+
+.bg-primary {
+  background-color: #1d4ed8 !important;
+}
+
+.border-primary {
+  border-color: #1d4ed8 !important;
+}
